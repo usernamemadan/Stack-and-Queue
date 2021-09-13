@@ -22,6 +22,7 @@ public class Main {
 	    q.print();
 	    System.out.println();
 	    
-	 
+	    q.dequeue();
+	    q.print();
 	}
 }

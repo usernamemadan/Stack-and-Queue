@@ -46,6 +46,16 @@ private Node head;
 			temp = temp.next;
 		}
 	}
-	
+	/**to remove the elements
+	 */
+	public int dequeue() {
+		if(head == null) {
+			System.out.println("Queue is empty");
+			return 0;
+		}
+		Node temp = head;
+		head = temp.next;
+		return temp.data;
+	}
 	
 }
