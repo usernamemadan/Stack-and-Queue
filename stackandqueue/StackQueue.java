@@ -37,4 +37,26 @@ public class StackQueue {
 			temp = temp.next;
 		}
 	}
+	/** to pop the top element out of the stack
+	 */
+	public int pop() {
+		if(head == null) {
+			System.out.println("Stack is empty");
+			return 0;
+		}
+		Node temp = head;
+		head = temp.next;
+		return temp.data;
+	}
+	
+	/** to peek the top element of the stack
+	 */
+	public int peek() {
+		if(head == null) {
+			System.out.println("Stack is empty");
+			return 0;
+		}
+		Node temp = head;
+		return temp.data;
+	}
 }

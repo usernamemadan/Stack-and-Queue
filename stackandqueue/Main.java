@@ -8,5 +8,11 @@ public class Main {
 		stack.push(70);
 		
 		stack.print();
+		
+	    stack.pop();
+	    stack.print();
+	    
+	    int peek = stack.peek();
+	    System.out.println("top element : "+peek);
 	}
 }
